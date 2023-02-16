@@ -8,7 +8,7 @@ This is a python single-chat application separated on client-side and server-sid
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [Python Messnger](https://git-scm.com/) and [Flask](https://pip.pypa.io/en/stable/getting-started/) to install Flask And Python Messnger.
 
 ```bash
 pip install flask
