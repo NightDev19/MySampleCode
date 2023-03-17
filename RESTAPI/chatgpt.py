@@ -1,4 +1,4 @@
-API_KEY = "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"
+API_KEY = "chatGPT API Key"
 import openai ,os
 
 os.environ['OPENAI_Key']=API_KEY
