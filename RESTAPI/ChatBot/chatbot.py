@@ -60,6 +60,6 @@ def get_response(user_input):
     return response
 
 
-# Testing the response system
+# Testing the response system hi
 while True:
     print('Bot: ' + get_response(input('You: ')))
