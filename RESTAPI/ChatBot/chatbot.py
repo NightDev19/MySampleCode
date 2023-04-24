@@ -2,17 +2,17 @@ import re
 import long_response as long
 
 
-def message_probability(user_message, recognised_words, single_response=False, required_words=[]):
+def message_probability(user_message, recognized_words, single_response=False, required_words=[]):
     message_certainty = 0
     has_required_words = True
 
     # Counts how many words are present in each predefined message
     for word in user_message:
-        if word in recognised_words:
+        if word in recognized_words:
             message_certainty += 1
 
-    # Calculates the percent of recognised words in a user message
-    percentage = float(message_certainty) / float(len(recognised_words))
+    # Calculates the percent of recognized words in a user message
+    percentage = float(message_certainty) / float(len(recognized_words))
 
     # Checks that the required words are in the string
     for word in required_words:
@@ -45,6 +45,7 @@ def check_all_messages(message):
     # Longer responses
     response(long.R_ADVICE, ['give', 'advice'], required_words=['advice'])
     response(long.R_EATING, ['what', 'you', 'eat'], required_words=['you', 'eat'])
+    response(long.R_ABOUT,["tell","me","about","yourself"],required_words=['yourself'])
 
     best_match = max(highest_prob_list, key=highest_prob_list.get)
     # print(highest_prob_list)
@@ -61,5 +62,6 @@ def get_response(user_input):
 
 
 # Testing the response system hi
+print('====== Trial Bot =========')
 while True:
     print('Bot: ' + get_response(input('You: ')))

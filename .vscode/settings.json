@@ -3,5 +3,6 @@
         "buttonitems",
         "mycursor",
         "Tajan"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
