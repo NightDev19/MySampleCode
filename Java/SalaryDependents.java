@@ -49,7 +49,9 @@ public class SalaryDependents extends JFrame{
         Title.setForeground(Color.white);
         //Title.setBackground(Color.GREEN);
         Title.setBounds(0,0,700,50);
+
         // Labels---------------------------------------------------
+        
         this.add(Name);
         Name.setBounds(10,65,100,20);
         Name.setForeground(Color.WHITE);
