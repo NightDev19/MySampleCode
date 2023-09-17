@@ -1,28 +1,27 @@
-class Person(object):
-
+class Person():
     # __init__ is known as the constructor
-    def __init__(self, name, idnumber):
+    def __init__(self, name, IDnumber):
         self.name = name
-        self.idnumber = idnumber
-
-    def display(self):
-        print(self.name)
-        print(self.idnumber)
+        self.IDnumber = IDnumber
 
 # child class
 class Employee(Person):
-    def __init__(self, name, idnumber, salary, post):
+    def __init__(self, name, IDnumber, salary, post):
         self.salary = salary
         self.post = post
 
         # invoking the __init__ of the parent class
-        Person.__init__(self, name, idnumber)
+        Person.__init__(self, name, IDnumber)
+
+    def display(self):
+        print(self.name)
+        print(self.IDnumber)
 
     def details(self):
-        print("My name is {}".format(self.name))
-        print("IdNumber: {}".format(self.idnumber))
+        print(f"My name is {self.name}")
+        print(f"IdNumber: {self.IDnumber}")
         print(f"Salary : {self.salary}")
-        print("Post: {}".format(self.post))
+        print(f"Post: {self.post}")
 
 
 # creation of an object variable or an instance
