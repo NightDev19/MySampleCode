@@ -37,7 +37,7 @@ public class SalaryDependents extends JFrame{
     
     public SalaryDependents(){
         pnl.setLayout(null);
-        pnl.setBackground(Color.GRAY);
+        pnl.setBackground(Color.BLACK);
         
         this.setSize(700,450);
         this.setLocation(350,100);

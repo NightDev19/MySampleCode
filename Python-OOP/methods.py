@@ -1,4 +1,3 @@
-
 class Dog:
     # Instance attribute
     def __init__(self, name):

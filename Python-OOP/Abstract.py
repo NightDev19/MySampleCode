@@ -35,7 +35,7 @@ class Square(Shape):
 
 # Create instances of the Rectangle and Square classes
 rectangle = Rectangle(5, 4)
-square = Square(4)
+square = Square(10)
 
 # Calling methods on the instances
 print("Rectangle Area:", rectangle.area())
